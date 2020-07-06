@@ -297,6 +297,9 @@
         _scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
       }
     }
+    if (@available(iOS 13.0, *)) {
+        _scrollView.automaticallyAdjustsScrollIndicatorInsets = NO;
+    }
 #endif
 
     _automaticallyAdjustContentInsets = YES;
